@@ -9,7 +9,14 @@ $scope.addMovie = movieService.addMovie;
 
 myApp.controller('TwoController', ['$scope', 'movieService', function($scope, movieService){
 
-$scope.movie = movieService.newMovies;
+$scope.addNewMovies = movieService.addMovie;
+$scope.movies = movieService.newMovies;
+
+
+// $scope.listingsNumber = 0;
+// $scope.setListingsMovie = function(index) {
+//     $scope.data.splice(index, 1);
+// };
 }]);
 
 myApp.factory('movieService', [function(){
@@ -17,7 +24,7 @@ myApp.factory('movieService', [function(){
   var allMovies = [];
 
   var newMovies = {
-   newArray: newArray
+   allMovies: allMovies
   };
 
   function addMovie(newMovie){

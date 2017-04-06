@@ -25,11 +25,11 @@
             <p> {{hours}}</p> -->
 </div>
 <div ng-controller="TwoController">
-  <div ng-repeat="Display in movie">
-  <p> {{name}} </p>
-  <p> {{description}}</p>
-  <p> {{director}}</p>
-  <p> {{hours}}</p>
+  <div ng-repeat="movie in movies.allMovies">
+  <p> {{movie.name}} </p>
+  <p> {{movie.description}}</p>
+  <p> {{movie.director}}</p>
+  <p> {{movie.hours}}</p>
 </div>
 </div>
   </body>
