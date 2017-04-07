@@ -2,17 +2,13 @@ var myApp = angular.module('myApp', []);
 myApp.controller('OneController', ['$scope','movieService', function($scope, movieService){
 $scope.movie = {name:'', description:'', director:'', hours:''};
 
-
 $scope.addMovie = movieService.addMovie;
 
 }]);
-
 myApp.controller('TwoController', ['$scope', 'movieService', function($scope, movieService){
 
 $scope.addNewMovies = movieService.addMovie;
 $scope.movies = movieService.newMovies;
-
-
 // $scope.listingsNumber = 0;
 // $scope.setListingsMovie = function(index) {
 //     $scope.data.splice(index, 1);
